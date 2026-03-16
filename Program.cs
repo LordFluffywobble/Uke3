@@ -4,7 +4,7 @@ class Program
     static void Main()
     {
         greetGame();
-        startGame();    
+        startGame();
         winCell();
         hallWay();
         livingRoom();
@@ -35,21 +35,21 @@ class Program
         Console.WriteLine("*There is a number keypad by the door in the otherwise barren room*\n*There is something scribbled on the side of the pad*\n1...2...");
         string keyP = Console.ReadLine()?.ToLower();
         switch (keyP)
-            {
-                case "3":
-                    winCell();            
-                    break;
-                
-                case "666":
-                    Console.WriteLine("");
-                    Console.WriteLine("What do you think you're doing?");
-                    Console.WriteLine("");
-                    break;
+        {
+            case "3":
+                winCell();
+                break;
 
-                default:
-                    loseGame();
-                    return;
-            }
+            case "666":
+                Console.WriteLine("");
+                Console.WriteLine("What do you think you're doing?");
+                Console.WriteLine("");
+                break;
+
+            default:
+                loseGame();
+                return;
+        }
     }
     static void winCell()
     {
@@ -57,9 +57,9 @@ class Program
         Console.WriteLine("");
         Console.WriteLine("*You exit the cell and step out in a small hallway that looks surprisingly homely*");
     }
-    
-    
-    
+
+
+
     static void hallWay()
     {
         Console.WriteLine("");
@@ -67,19 +67,19 @@ class Program
         Console.WriteLine("Speak the mighty words of Poe:");
         Console.WriteLine("Never....?");
         Console.WriteLine("");
-        
+
         string keyP = Console.ReadLine()?.ToLower();
         switch (keyP)
-        {   
+        {
             case "nevermore":
-            Console.WriteLine("");
-            Console.WriteLine("You guessed correctly, please enter the livingroom\nThe statue moves aside and you enter the livingroom");
-            Console.WriteLine("");
-            break;
+                Console.WriteLine("");
+                Console.WriteLine("You guessed correctly, please enter the livingroom\nThe statue moves aside and you enter the livingroom");
+                Console.WriteLine("");
+                break;
 
             default:
-            loseGame();
-            break;
+                loseGame();
+                break;
         }
     }
 
