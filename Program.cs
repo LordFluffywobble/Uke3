@@ -8,10 +8,6 @@ class Program
         winCell();
         hallWay();
         livingRoom();
-
-        // while (true)
-        // {
-        // }
     }
 
     static void loseGame()
@@ -67,7 +63,7 @@ class Program
     static void hallWay()
     {
         Console.WriteLine("");
-        Console.WriteLine("At the end of the hallway you see a stone statue with something written on a plaque underneath");
+        Console.WriteLine("At the end of the hallway you see a stone statue with something written on a plaque underneath:");
         Console.WriteLine("Speak the mighty words of Poe:");
         Console.WriteLine("Never....?");
         Console.WriteLine("");
